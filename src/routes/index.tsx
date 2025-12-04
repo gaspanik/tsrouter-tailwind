@@ -1,6 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
-import logo from '../logo.svg'
 import '../App.css'
+import { TreePalm } from 'lucide-react'
 
 export const Route = createFileRoute('/')({
   component: App,
@@ -8,29 +8,11 @@ export const Route = createFileRoute('/')({
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/routes/index.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <a
-          className="App-link"
-          href="https://tanstack.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn TanStack
-        </a>
-      </header>
+    <div className="flex flex-col justify-center items-center bg-gray-50 min-h-screen">
+      <div className="flex items-center gap-2 mt-4">
+        <TreePalm className="w-6 h-6" />
+        <h1 className="font-medium text-2xl">Tanstack</h1>
+      </div>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 {
-  "name": "filebase",
+  "name": "tanstack-router-tailwindcss",
   "private": true,
   "type": "module",
   "scripts": {
@@ -7,9 +7,9 @@
     "build": "vite build && tsc",
     "serve": "vite preview",
     "test": "vitest run",
-    "lint": "biome lint src --write",
-    "format": "biome format src --write",
-    "check": "biome check src --write"
+    "lint": "biome lint --write",
+    "format": "biome format -write",
+    "check": "biome check --write"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.17",
@@ -17,6 +17,7 @@
     "@tanstack/react-router": "^1.139.14",
     "@tanstack/react-router-devtools": "^1.139.14",
     "@tanstack/router-plugin": "^1.139.14",
+    "lucide-react": "^0.555.0",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
     "tailwindcss": "^4.1.17"
@@ -31,9 +32,11 @@
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.1.1",
     "jsdom": "^27.2.0",
+    "pnpm": "^10.24.0",
     "typescript": "^5.9.3",
     "vite": "^7.2.6",
     "vitest": "^4.0.15",
     "web-vitals": "^5.1.0"
-  }
+  },
+  "packageManager": "pnpm@10.24.0"
 }

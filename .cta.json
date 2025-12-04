@@ -1,5 +1,5 @@
 {
-  "projectName": "filebase",
+  "projectName": "tanstack-router-tailwindcss",
   "mode": "file-router",
   "typescript": true,
   "tailwind": true,
