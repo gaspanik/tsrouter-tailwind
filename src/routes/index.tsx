@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router'
-import '../App.css'
+import '@/App.css'
 import { TreePalm } from 'lucide-react'
 
 export const Route = createFileRoute('/')({

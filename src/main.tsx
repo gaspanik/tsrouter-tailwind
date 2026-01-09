@@ -5,17 +5,21 @@ import { RouterProvider, createRouter } from '@tanstack/react-router'
 // Import the generated route tree
 import { routeTree } from './routeTree.gen'
 
-import './styles.css'
+import '@/styles.css'
 import reportWebVitals from './reportWebVitals.ts'
 
 // Create a new router instance
 const router = createRouter({
   routeTree,
   context: {},
-  defaultPreload: 'intent',
-  scrollRestoration: true,
   defaultStructuralSharing: true,
   defaultPreloadStaleTime: 0,
+  // Set the base path for the router, if building with a base path other than `/`
+  // use the build option: `--base=/some-path/` to set this value
+  basepath: import.meta.env.BASE_URL,
+  // scroll restoration behavior
+  defaultPreload: 'intent',
+  scrollRestoration: true,
 })
 
 // Register the router instance for type safety
